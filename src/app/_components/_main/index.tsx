@@ -30,6 +30,9 @@ export default function Main() {
     },
     [snapshot.status]
   );
+  const handleNextButtonClick = useCallback(() => {
+    store.next();
+  }, []);
   return (
     <div>
       {['win', 'corrected'].includes(snapshot.status) && (
@@ -64,6 +67,14 @@ export default function Main() {
             {i}
           </button>
         ))}
+      </div>
+      <div className={styles.buttons}>
+        <button
+          className={cn(styles.button, styles.full)}
+          onClick={handleNextButtonClick}
+        >
+          Next
+        </button>
       </div>
     </div>
   );
