@@ -38,7 +38,7 @@ export function select(value: number) {
     } else {
       state.status = 'win';
     }
-    setTimeout(next, 2000);
+    setTimeout(next, 1600);
   } else {
     state.status = 'lose';
   }
