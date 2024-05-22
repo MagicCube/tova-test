@@ -11,7 +11,6 @@ import * as store from '../../store';
 import { useStore } from '../../store';
 
 import styles from './index.module.css';
-import { set } from 'lodash';
 
 export default function Main() {
   const snapshot = useStore();
