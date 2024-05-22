@@ -1,0 +1,54 @@
+.container {
+}
+
+.row1,
+.row2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  width: 17vw;
+  height: 17vw;
+  margin: 0 8px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  background: rgb(71, 207, 115);
+
+  &:active {
+    background: green;
+  }
+}
+
+.shaking {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) translateY(5px);
+    background: red;
+  }
+  50% {
+    transform: translateX(5px) translateY(-5px);
+  }
+  75% {
+    transform: translateX(-5px) translateY(5px);
+    background: red;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
