@@ -25,6 +25,7 @@
   height: 58%;
   border-radius: 50%;
   background-color: #000;
+  transition: background 0.3s ease-in-out;
 
   &.red {
     background-color: #ff0000;
